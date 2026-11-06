@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding-top: 80px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  background-color: #fdfbf7;
+  color: #333333;
+  text-align: center;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #fdfbf7;
+  border-bottom: 1px solid #bbbbbb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 16px;
+}
+
+nav a {
+  color: #222222;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  margin: 0 15px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.knop {
+  background-color: #2f5d3a;
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+  padding: 8px 14px;
+  border-radius: 6px;
+}
+
+section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  scroll-margin-top: 80px;
+}
+
+h1, h2 {
+  font-style: italic;
+  color: #555555;
+}
+
+.home-boven {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+
+.foto {
+  width: 150px;
+  height: 150px;
+  background-color: #d9d9d9;
+  border-radius: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 10px;
+  border: 1px solid #111111;
+}
+
+iframe {
+  width: 100%;
+  height: 350px;
+  border: none;
+  margin-top: 30px;
+}
+
+#contact {
+  text-align: left;
+  font-size: 16px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  margin-top: 5px;
+  padding: 8px;
+  font-size: 14px;
+}
+
+button {
+  background-color: #4a8a2f;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 8px 18px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2f5d3a;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+
+  header {
+    padding: 0 15px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .home-boven {
+    flex-direction: column;
+  }
+}
